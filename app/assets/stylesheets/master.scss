@@ -26,3 +26,31 @@ body {
   font-family: 'chunkfiveroman', sans-serif;
   font-size: 26px;
 }
+
+.pagination {
+  display: inline_block;
+  color: #A19F9F;
+  font-family: 'chunkfiveroman', sans-serif;
+  font-size: 15px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 8px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  float: left;
+  padding: 8px 8px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
