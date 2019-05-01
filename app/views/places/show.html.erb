@@ -11,7 +11,7 @@
       <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
   <% end %>
 
-<div class="photo">
+<div id="photo">
   <% @place.photos.each do |photo| %>
       <% if photo.picture.url.present? %>
         <%= image_tag photo.picture.url %>
