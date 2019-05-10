@@ -18,14 +18,15 @@
       <% if photo.picture.url.present? %>
         <%= image_tag photo.picture.url %>
         <%= photo.caption %>
+        <%= link_to photo.picture.url %>
       <% end %>
   <% end %>
 
 </div>
 
-<a target="_blank" href="photo.picture.url">
+<!-- <a target="_blank" href="photo.picture.url">
   <img src="photo.picture.url">
-</a>
+</a> -->
 
   <br/><br/>
 
