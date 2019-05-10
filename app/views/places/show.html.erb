@@ -18,7 +18,7 @@
       <% if photo.picture.url.present? %>
         <%= image_tag photo.picture.url %>
         <%= photo.caption %>
-        <%= link_to photo.picture.url %>
+        <%= link_to photo.picture %>
       <% end %>
   <% end %>
 
