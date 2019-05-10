@@ -114,8 +114,16 @@ blockquote p {
 
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  width: 100%;
+  max-height: 400px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-inner {
+  background: image_url('crossword.png');
+  background-color: #C0BEBE;
 }
 
 .carousel-item.active, 
@@ -124,15 +132,22 @@ blockquote p {
   display: block;
 }
 
+.carousel-control-next:hover, 
+.carousel-control-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 60px;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: auto;
   position: absolute;
-  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel {
