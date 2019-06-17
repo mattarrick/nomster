@@ -1,6 +1,5 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
-  belongs_to :place
 
   def create
     @place = Place.find(params[:place_id])
