@@ -1,5 +1,6 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  has_many :comments, dependant: :destroy
 
   def index
     @places = Place.all.page(params[:page]).per_page(3)
